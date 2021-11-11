@@ -32,15 +32,21 @@ mongoose.connection
 // Models
 //////////////////////////////
 // the bookmark schema
+const BookmarkSchema = new mongoose.Schema({
+    title: String,
+    url: String,
+}, {timestamps: true})
+
+const Bookmark = mongoose.model("Bookmark", BookmarkSchema)
 
 
-
-
+//////////////////////////////
+// Middleware
+//////////////////////////////
 // import middleware
 app.use(cors()) // prevent cors errors, opens up access for frontend
 app.use(morgan("dev")) //logging
 app.use(express.json()) // parse json bodies
-
 
 
 ////////////////////////////////
@@ -51,9 +57,16 @@ app.get("/", (req, res) => {
     res.send("Hello KEB")
 })
 
-// index route
-
-
+// BOOKMARK index route
+// get request to /bookmark, returns all bookmarks as json
+app.get("/bookmark", async (req, res) => {
+    try {
+        // send all bookmarks
+        res.json(await Bookmark.find({}));
+    } catch (error) {
+        res.status(400).json({ error })
+    }
+});
 
 // create route
 
