@@ -32,4 +32,4 @@ This is the backend for the Bookmark'd App, using MongoDB through Heroku to form
 | Create | `/bookmark` | POST request, uses request body to make a new bookmark |
 | Update | `/bookmark/:id` | PUT request, updates the bookmark specified |
 | Destroy | `/bookmark/:id` | DELETE request, deletes the bookmark specified |
-| Show | `/bookmark/:id` | GET request, shows the bookmark specified
+| Show | `/bookmark/:id` | GET request, shows the bookmark specified |
