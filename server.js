@@ -101,6 +101,17 @@ app.delete("/bookmark/:id", async (req, res) => {
   }
 });
 
+// BOOKMARK Show Route
+// show request to "/bookmark/:id", shows the bookmark specified
+app.get("/bookmark/:id", async (req, res) => {
+    try {
+      // delete a bookmark
+      res.json(await Bookmark.findById(req.params.id));
+    } catch (error) {
+      res.status(400).json({ error });
+    }
+});
+
 /////////////////////////////////
 // Server Listener
 /////////////////////////////////
