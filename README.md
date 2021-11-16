@@ -6,7 +6,7 @@ This is the backend for the Bookmark'd App, using MongoDB through Heroku to form
 - Brian Anderson (team lead and repo owner)
 - [Kerlin Lopes](https://github.com/kerlinlopes)
 - [Elikya Bokanga](https://github.com/elikyaB)
-- Wensy DeSousa
+- [Wensy DeSousa](https://github.com/wensyd)
 
 ## Dependencies
 
