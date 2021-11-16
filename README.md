@@ -3,7 +3,7 @@
 This is the backend for the Bookmark'd App, using MongoDB through Heroku to form the API for the [React frontend.](https://github.com/gadgetgeek/keb_bmproject_frontend)
 
 ## Contributors
-- Brian Anderson (team lead and repo owner)
+- [Brian Anderson](https://github.com/gadgetgeek) (team lead and repo owner)
 - [Kerlin Lopes](https://github.com/kerlinlopes)
 - [Elikya Bokanga](https://github.com/elikyaB)
 - [Wensy DeSousa](https://github.com/wensyd)
